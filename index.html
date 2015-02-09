@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Event Rater</title>
+		<meta charset="UTF-8">
+		<link	rel="stylesheet"	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"	/>
+		<script	src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+        <link rel="stylesheet" href="mijnStyles.css" />
+<script src="mijnJquery.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="venue">
+			<header data-role="header">
+				Select a venue
+			</header>
+			<article data-role="content">
+				<ul data-role="listview" data-filter="true">
+					<li>
+						<a href="#melkweg"> <h1>Melkweg</h1></a>
+					</li>
+					<li>
+						<a href="#paradiso"> <h1>Paradiso</h1></a>
+					</li>
+					<li>
+						<a href="#escape"><h1>Escape</h1></a>
+					</li>
+				</ul>
+			</article>
+			<footer data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li>
+							<a href="home" data-icon="home">Home</a>
+						</li>
+						<li>
+							<a href="venue" data-icon="grid">Venues</a>
+						</li>
+						<li>
+							<a href="info" data-icon="info">Info</a>
+						</li>
+					</ul>
+				</nav>
+			</footer>
+		</div> <!-- Page melkweg -->
+		<div data-role="page" id="melkweg">
+			<header data-role="header">
+				<h1>Melkweg</h1>
+				<a href="#venue" data-icon="grid" data-iconpos="notext">Event</a>
+			</header>
+			<article data-role="content">
+			<ul data-role="listview" data-filter="true">
+					<li>
+						<a href="#rootsrider"> <h1>Roots Riders</h1></a>
+					</li>
+					<li>
+						<a href="#preignencore"> <h1>P Reign @ Encore</h1></a>
+					</li>
+					<li>
+						<a href="#voyage"><h1>Voyage</h1></a>
+					</li>
+				</ul>
+			</article>
+		</div>
+		<div data-role="page" id="rootsrider">
+			<header data-role="header">
+				<h1>Roots Rider</h1>
+				<a href="#melkweg" data-icon="arrow-l" data-iconpos="notext">Back</a>
+			</header>
+			<article data-role="content">
+				<img class="poster" src="pics/bobmarley.jpg">
+                <h3>Roots Rider</h3>
+                <br />
+                <p>Amsterdam</p>
+                <p>Vandaag 22:00 uur</p>
+                </a>
+			</article>
+		</div>
+	</body>
+</html>
