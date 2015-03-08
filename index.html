@@ -7,8 +7,6 @@
 		<script	src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
-        <link rel="stylesheet" href="mijnStyles.css" />
-		<script src="mijnJquery.js"></script>
 	</head>
 	<body>
 		<div data-role="page" id="venue">
@@ -45,7 +43,7 @@
 			</footer>
 		</div> <!-- Page melkweg -->
 		<div data-role="page" id="melkweg">
-			<header data-role="header">
+			<header data-roe="header">
 				<h1>Melkweg</h1>
 				<a href="#venue" data-icon="grid" data-iconpos="notext">Event</a>
 			</header>
@@ -62,6 +60,13 @@
 					</li>
 				</ul>
 			</article>
+            <footer data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+							<a href="info" data-icon="info">Info</a>
+						</li>
+					</ul>
+				</nav>
+			</footer>
 		</div>
 		<div data-role="page" id="rootsrider">
 			<header data-role="header">
@@ -73,9 +78,57 @@
                 <h3>Roots Rider</h3>
                 <br />
                 <p>Amsterdam</p>
-                <p>Vandaag 22:00 uur</p>
-                </a>
+                <p>06-02-2015 22:00 uur</p>
+                <hr>
+                <div id=​"notation">
+                	<form action="form.php" method="post">
+			            <label for="evenement">Hoe vond je het evenement?</label>
+            			<input type="range" name="evenement" id="evenement" min="1" max="5"/>
+                        <label for="locatie">Was het makkelijk te vinden</label>
+            			<input type="range" name="locatie" id="locatie" min="1" max="5"/>
+            		<div data-role="fieldcontain">
+            			<label for="naam">Naam:</label>
+		                <input class="required" type="text" id="naam" name="naam" placeholder="Typ hier je naam" />
+                        <label for="woonplaats">Woonplaats:</label>
+                <input type="text" name="plaats" id="plaats" list="steden" placeholder="woonplaats" />
+                <datalist id="steden">
+                	<option value="Almere">
+                    <option value="Amstelveen">
+                    <option value="Amsterdam">
+                    <option value="Den Haag">
+                    <option value="Hilversum">
+                    <option value="Leeuwarden">
+                    <option value="Maastricht">
+                    <option value=DIT IS ZO LEUK"Naarden">
+                    <option value="Utrecht">
+               </datalist>
+                <label for="tel">Tel.:</label>
+                <input class="required" type="text" id="tel" name="tel" placeholder="06" />
+                <label for="email">E-mail:</label>
+                <input class="required" type="text" id="email" name="email" placeholder="e-mail" />
+                <label for="reactie">Commentaar:</label>
+                <textarea cols="35" rows="4" name="reactie" id="reactie" placeholder="Commentaar"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Verzend">
+        </form><!--einde formulier-->
+				</div>
 			</article>
+            <footer data-role="footer" data-position="fixed">
+				<nav data-role="navbar">
+					<ul>
+						<li>
+							<a href="home" data-icon="home">Home</a>
+						</li>
+						<li>
+							<a href="venue" data-icon="grid">Venues</a>
+						</li>
+						<li>
+							<a href="info" data-icon="info">Info</a>
+						</li>
+					</ul>
+				</nav>
+			</footer>Ik heb geen idee hoe dit werkt
 		</div>
 	</body>
 </html>
