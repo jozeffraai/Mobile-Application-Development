@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Event Monitor - Jozef Fraai</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    //menu Strings
+    <string name="main_menu_add">Add Event</string>
+    <string name="add_assignment_save">Add Event</string>
+
+    //activity_main Strings
+    <string name="main_list_empty">There are no events</string>
+    <string name="title_activity_add_assignment">Add Event</string>
+
+    //activity_add_assignment Strings
+    <string name="add_assignment_assignment_hint">Add Event</string>
+    <string name="title_activity_details">Event Datails</string>
+</resources>

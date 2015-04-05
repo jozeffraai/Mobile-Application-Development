@@ -2,11 +2,13 @@ function add()
 {
 	//Retrive the entered form data
 	var rating = $('[name="rating"]').val();
+	var date = $('[name="date"]').val();
 	//Fetch the existing objects
 	var objects = getObjects();
 	//Push the new item into the existing list
 	objects.push({
-		rating: rating
+		rating: rating,
+		date: date
 	});
 	//Store the new list
 	saveObjects(objects);
@@ -53,7 +55,7 @@ function homepage()
 	result = result/aantalStemmen;
 	result = result.toFixed();
 	
-		$(".value").html("This event has a rating of "+result+ " out of 5");
+		$(".value").html("This event has a rating of "+ result+ " out of 5");
 		}
 	else
 	{
